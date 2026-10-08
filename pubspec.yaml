@@ -1,0 +1,59 @@
+name: sbronzometro
+description: "Sbronzometro - a minimalist alcohol unit (AU) calculator with 3-way reactive ABV, volume and unit conversion."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended lints for Flutter apps.
+  flutter_lints: ^6.0.0
+
+  # Generates the Android/iOS launcher icons from assets/icon/app_icon.png.
+  # Run it manually with:  dart run flutter_launcher_icons
+  flutter_launcher_icons: ^0.14.3
+
+# ---------------------------------------------------------------------------
+# Launcher icon configuration (flutter_launcher_icons).
+#
+# Source art lives in assets/icon/. The mark is a stylized drink glass with an
+# embedded percentage symbol. `app_icon.png` is the opaque legacy icon while
+# `app_icon_foreground.png` is used for Android 8+ adaptive icons (content kept
+# inside the 66% safe zone) over the solid brand background.
+#
+# Regenerate the native icons with:
+#   dart run flutter_launcher_icons
+# ---------------------------------------------------------------------------
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: false
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#E8590C"
+  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
+
+# The following section is specific to Flutter packages.
+flutter:
+  uses-material-design: true
+
+  assets:
+    # Kept in the bundle so the mark can be reused in native/adaptive contexts.
+    - assets/icon/
